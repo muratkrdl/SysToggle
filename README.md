@@ -6,13 +6,20 @@
 
 <p align="center"><a href="#türkçe">Türkçe</a> · <a href="#english">English</a></p>
 
-<p align="center"><img src="docs/screenshots/modules.jpg" width="720" alt="Sysmodule list"></p>
-
-| | |
-|---|---|
-| <img src="docs/screenshots/profiles.jpg" alt="Profiles"> | <img src="docs/screenshots/apply.jpg" alt="Applying a profile"> |
-| <img src="docs/screenshots/details.jpg" alt="Module details"> | <img src="docs/screenshots/settings.jpg" alt="Settings and about"> |
-| <img src="docs/screenshots/japanese.jpg" alt="Japanese UI"> | |
+<table>
+  <tr>
+    <td><img src="docs/screenshots/modules.jpg" alt="Sysmodule list"></td>
+    <td><img src="docs/screenshots/details.jpg" alt="Module details"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/profiles.jpg" alt="Profiles"></td>
+    <td><img src="docs/screenshots/apply.jpg" alt="Applying a profile"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/settings.jpg" alt="Settings and about"></td>
+    <td><img src="docs/screenshots/japanese.jpg" alt="Japanese UI"></td>
+  </tr>
+</table>
 
 ---
 
