@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "系統模組",
+    "profiles": "設定檔",
+    "settings": "設定"
+  },
+  "profiles": {
+    "header": "設定檔",
+    "subtitle": "A: 套用   X: 以目前狀態覆寫   Y: 刪除",
+    "save_new": "將目前狀態儲存為新設定檔",
+    "empty": "尚無設定檔。請先設定好系統模組，再將目前狀態儲存為設定檔。",
+    "summary": "{} 個開啟，{} 個關閉",
+    "name_header": "設定檔名稱",
+    "name_hint": "例如：TotK、一般、省電",
+    "keyboard_failed": "無法開啟鍵盤。",
+    "saved": "已儲存設定檔「{}」",
+    "save_failed": "無法儲存設定檔。",
+    "apply_question": "要套用設定檔「{}」嗎？開機設定會立即變更，重新開機後生效。",
+    "apply_only": "套用",
+    "apply_reboot": "套用並重新開機",
+    "applied": "已套用「{}」：{} 個已變更，{} 個未安裝",
+    "apply_failed": "有 {} 個模組無法變更。",
+    "overwrite": "覆寫",
+    "overwrite_question": "要以目前的開機設定覆寫設定檔「{}」嗎？",
+    "delete": "刪除",
+    "delete_question": "要刪除設定檔「{}」嗎？"
+  },
+  "memory": {
+    "title": "系統記憶體",
+    "value": "可用 {} MB / 共 {} MB",
+    "unavailable": "無法取得"
+  },
+  "list": {
+    "header": "系統模組",
+    "subtitle": "A: 開機時啟動   X: 立即啟動 / 停止   Y: 詳細資訊",
+    "empty": "在 atmosphere/contents 中找不到系統模組。",
+    "error": "無法讀取 sdmc:/atmosphere/contents。"
+  },
+  "state": {
+    "running": "執行中",
+    "stopped": "已停止"
+  },
+  "action": {
+    "start": "立即啟動",
+    "stop": "立即停止",
+    "details": "詳細資訊",
+    "turn_off": "關閉"
+  },
+  "notify": {
+    "started": "已啟動 {}",
+    "stopped": "已停止 {}",
+    "live_failed": "無法啟動或停止 {}",
+    "requires_reboot": "{} 無法在主機執行時啟動或停止。請變更其開機設定後重新開機。",
+    "live_unavailable": "此系統不支援處理程序控制。",
+    "flag_failed": "無法變更 {} 的開機設定"
+  },
+  "reboot": {
+    "title": "重新開機以套用開機設定",
+    "detail": "按下A鈕",
+    "failed": "無法重新開機。請手動重新啟動主機。"
+  },
+  "warning": {
+    "signature_patches": "關閉 {} 後，未經簽章安裝的遊戲可能無法啟動。",
+    "overlay_loader": "關閉 {} 後，Ultrahand / Tesla 及所有疊加層都將無法使用。"
+  },
+  "details": {
+    "program_id": "程式ID：{}",
+    "path": "資料夾：{}",
+    "boot": "開機時啟動：{}",
+    "live_ok": "不需重新開機即可啟動或停止。",
+    "live_reboot": "變更會在重新開機後生效。",
+    "yes": "是",
+    "no": "否"
+  },
+  "settings": {
+    "header": "設定",
+    "language": "語言",
+    "language_auto": "自動",
+    "restart": "重新啟動 SysToggle 後即會套用新語言。",
+    "save_failed": "無法儲存設定。",
+    "about_header": "關於",
+    "version": "版本",
+    "author": "作者",
+    "source": "原始碼",
+    "credits": "使用 borealis (Apache-2.0)、nanovg (zlib)、Yoga (MIT)、fmt (MIT)、tinyxml2 (zlib) 及 nlohmann/json (MIT) 建置。SysToggle 以 MIT 授權條款發布。",
+    "memory_note": "系統記憶體是系統模組與 Atmosphère 共用的記憶體集區。不足時，載入大量 LayeredFS 模組的遊戲可能因錯誤 0xFFE（ams_mitm 中的 std::abort）而當機。關閉系統模組可在重新開機後釋放記憶體。"
+  }
+}

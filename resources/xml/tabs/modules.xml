@@ -1,0 +1,54 @@
+<brls:Box
+    width="auto"
+    height="auto">
+
+    <brls:ScrollingFrame
+        width="auto"
+        height="auto"
+        axis="column"
+        alignItems="stretch"
+        scrollingBehavior="centered"
+        grow="1.0">
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="column"
+            alignItems="stretch"
+            paddingTop="@style/brls/sidebar/padding_top"
+            paddingRight="@style/brls/sidebar/padding_right"
+            paddingBottom="@style/brls/sidebar/padding_bottom"
+            paddingLeft="@style/brls/sidebar/padding_left">
+
+            <brls:DetailCell
+                id="memory"
+                title="@i18n/app/memory/title" />
+
+            <brls:DetailCell
+                id="reboot"
+                visibility="gone"
+                title="@i18n/app/reboot/title" />
+
+            <brls:Header
+                title="@i18n/app/list/header"
+                subtitle="@i18n/app/list/subtitle" />
+
+            <brls:Label
+                id="status"
+                visibility="gone"
+                width="auto"
+                height="auto"
+                marginTop="20" />
+
+            <brls:Box
+                id="list"
+                width="auto"
+                height="auto"
+                axis="column"
+                alignItems="stretch" />
+
+        </brls:Box>
+
+    </brls:ScrollingFrame>
+
+</brls:Box>

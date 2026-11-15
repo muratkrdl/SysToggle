@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "Sysmodule",
+    "profiles": "Profili",
+    "settings": "Impostazioni"
+  },
+  "profiles": {
+    "header": "Profili",
+    "subtitle": "A: applica   X: sovrascrivi con lo stato attuale   Y: elimina",
+    "save_new": "Salva lo stato attuale come nuovo profilo",
+    "empty": "Ancora nessun profilo. Configura i sysmodule, poi salva lo stato attuale come profilo.",
+    "summary": "{} attivi, {} disattivati",
+    "name_header": "Nome del profilo",
+    "name_hint": "Ad esempio: TotK, Normale, Batteria",
+    "keyboard_failed": "Impossibile aprire la tastiera.",
+    "saved": "Profilo \"{}\" salvato",
+    "save_failed": "Impossibile salvare i profili.",
+    "apply_question": "Applicare il profilo \"{}\"? Le impostazioni di avvio cambiano ora e avranno effetto dopo il riavvio.",
+    "apply_only": "Applica",
+    "apply_reboot": "Applica e riavvia",
+    "applied": "\"{}\" applicato: {} modificati, {} non installati",
+    "apply_failed": "Impossibile modificare {} moduli.",
+    "overwrite": "Sovrascrivi",
+    "overwrite_question": "Sostituire il profilo \"{}\" con le impostazioni di avvio attuali?",
+    "delete": "Elimina",
+    "delete_question": "Eliminare il profilo \"{}\"?"
+  },
+  "memory": {
+    "title": "Memoria di sistema",
+    "value": "{} MB liberi su {} MB",
+    "unavailable": "Non disponibile"
+  },
+  "list": {
+    "header": "Sysmodule",
+    "subtitle": "A: avvia all'accensione   X: avvia / arresta ora   Y: dettagli",
+    "empty": "Nessun sysmodule trovato in atmosphere/contents.",
+    "error": "Impossibile leggere sdmc:/atmosphere/contents."
+  },
+  "state": {
+    "running": "in esecuzione",
+    "stopped": "arrestato"
+  },
+  "action": {
+    "start": "Avvia ora",
+    "stop": "Arresta ora",
+    "details": "Dettagli",
+    "turn_off": "Disattiva"
+  },
+  "notify": {
+    "started": "{} avviato",
+    "stopped": "{} arrestato",
+    "live_failed": "Impossibile avviare o arrestare {}",
+    "requires_reboot": "{} non può essere avviato o arrestato mentre la console è in funzione. Modifica l'impostazione di avvio e riavvia.",
+    "live_unavailable": "Il controllo dei processi non è disponibile su questo sistema.",
+    "flag_failed": "Impossibile modificare l'impostazione di avvio di {}"
+  },
+  "reboot": {
+    "title": "Riavvia per applicare le modifiche",
+    "detail": "Premi A",
+    "failed": "Riavvio non riuscito. Riavvia la console manualmente."
+  },
+  "warning": {
+    "signature_patches": "Disattivare {} può impedire l'avvio dei giochi installati senza firma.",
+    "overlay_loader": "Disattivare {} disabilita Ultrahand / Tesla e tutti gli overlay."
+  },
+  "details": {
+    "program_id": "ID programma: {}",
+    "path": "Cartella: {}",
+    "boot": "Avvio all'accensione: {}",
+    "live_ok": "Può essere avviato o arrestato senza riavviare.",
+    "live_reboot": "Le modifiche si applicano solo dopo un riavvio.",
+    "yes": "sì",
+    "no": "no"
+  },
+  "settings": {
+    "header": "Impostazioni",
+    "language": "Lingua",
+    "language_auto": "Automatica",
+    "restart": "Riavvia SysToggle per applicare la nuova lingua.",
+    "save_failed": "Impossibile salvare le impostazioni.",
+    "about_header": "Informazioni",
+    "version": "Versione",
+    "author": "Autore",
+    "source": "Codice sorgente",
+    "credits": "Realizzato con borealis (Apache-2.0), nanovg (zlib), Yoga (MIT), fmt (MIT), tinyxml2 (zlib) e nlohmann/json (MIT). SysToggle è distribuito con licenza MIT.",
+    "memory_note": "La memoria di sistema è lo spazio che i sysmodule condividono con Atmosphere. Quando scarseggia, i giochi che caricano molte mod LayeredFS possono bloccarsi con l'errore 0xFFE (std::abort in ams_mitm). Disattivare i sysmodule la libera dopo un riavvio."
+  }
+}

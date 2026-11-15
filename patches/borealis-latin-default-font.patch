@@ -1,0 +1,39 @@
+diff --git a/library/lib/core/application.cpp b/library/lib/core/application.cpp
+index a45103da..9cbd0c48 100644
+--- a/library/lib/core/application.cpp
++++ b/library/lib/core/application.cpp
+@@ -1279,7 +1279,9 @@ int Application::getFont(std::string fontName)
+ int Application::getDefaultFont()
+ {
+ #ifdef __SWITCH__
+-    static int regular = Application::getFont(FONT_CHINESE_SIMPLIFIED);
++    static int regular = Application::getLocale().rfind("zh", 0) == 0
++        ? Application::getFont(FONT_CHINESE_SIMPLIFIED)
++        : Application::getFont(FONT_REGULAR);
+ #else
+     static int regular = Application::getFont(FONT_REGULAR);
+ #endif
+diff --git a/library/lib/platforms/switch/switch_font.cpp b/library/lib/platforms/switch/switch_font.cpp
+index 3bba8891..39c5703e 100644
+--- a/library/lib/platforms/switch/switch_font.cpp
++++ b/library/lib/platforms/switch/switch_font.cpp
+@@ -104,6 +104,19 @@ void SwitchFontLoader::loadFonts()
+             brls::Logger::warning("Cannot find custom emoji, (Searched at: {})", USER_EMOJI_PATH);
+         }
+     }
++
++    int regularFont = Application::getFont(FONT_REGULAR);
++    if (regularFont != FONT_INVALID)
++    {
++        const std::string fallbacks[] = { FONT_CHINESE_SIMPLIFIED, FONT_CHINESE_SIMPLIFIED_EXT,
++            FONT_CHINESE_TRADITIONAL, FONT_KOREAN_REGULAR, FONT_SWITCH_ICONS, FONT_MATERIAL_ICONS, "emoji" };
++        for (const std::string& name : fallbacks)
++        {
++            int fallbackFont = Application::getFont(name);
++            if (fallbackFont != FONT_INVALID)
++                nvgAddFallbackFontId(vg, regularFont, fallbackFont);
++        }
++    }
+ }
+ 
+ } // namespace brls

@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "Sysmodules",
+    "profiles": "Perfiles",
+    "settings": "Ajustes"
+  },
+  "profiles": {
+    "header": "Perfiles",
+    "subtitle": "A: aplicar   X: sobrescribir con el estado actual   Y: borrar",
+    "save_new": "Guardar el estado actual como perfil nuevo",
+    "empty": "Aún no hay perfiles. Configura tus sysmodules y guarda el estado actual como perfil.",
+    "summary": "{} activados, {} desactivados",
+    "name_header": "Nombre del perfil",
+    "name_hint": "Por ejemplo: TotK, Normal, Batería",
+    "keyboard_failed": "No se pudo abrir el teclado.",
+    "saved": "Perfil \"{}\" guardado",
+    "save_failed": "No se pudieron guardar los perfiles.",
+    "apply_question": "¿Aplicar el perfil \"{}\"? Los ajustes de arranque cambian ahora y se aplican tras reiniciar.",
+    "apply_only": "Aplicar",
+    "apply_reboot": "Aplicar y reiniciar",
+    "applied": "\"{}\" aplicado: {} cambiados, {} no instalados",
+    "apply_failed": "No se pudieron cambiar {} módulos.",
+    "overwrite": "Sobrescribir",
+    "overwrite_question": "¿Reemplazar el perfil \"{}\" con los ajustes de arranque actuales?",
+    "delete": "Borrar",
+    "delete_question": "¿Borrar el perfil \"{}\"?"
+  },
+  "memory": {
+    "title": "Memoria del sistema",
+    "value": "{} MB libres de {} MB",
+    "unavailable": "No disponible"
+  },
+  "list": {
+    "header": "Sysmodules",
+    "subtitle": "A: iniciar al arrancar   X: iniciar / detener ahora   Y: detalles",
+    "empty": "No se encontraron sysmodules en atmosphere/contents.",
+    "error": "No se pudo leer sdmc:/atmosphere/contents."
+  },
+  "state": {
+    "running": "en ejecución",
+    "stopped": "detenido"
+  },
+  "action": {
+    "start": "Iniciar ahora",
+    "stop": "Detener ahora",
+    "details": "Detalles",
+    "turn_off": "Desactivar"
+  },
+  "notify": {
+    "started": "{} iniciado",
+    "stopped": "{} detenido",
+    "live_failed": "No se pudo iniciar ni detener {}",
+    "requires_reboot": "{} no se puede iniciar ni detener con la consola en marcha. Cambia su ajuste de arranque y reinicia.",
+    "live_unavailable": "El control de procesos no está disponible en este sistema.",
+    "flag_failed": "No se pudo cambiar el ajuste de arranque de {}"
+  },
+  "reboot": {
+    "title": "Reiniciar para aplicar los cambios",
+    "detail": "Pulsa A",
+    "failed": "No se pudo reiniciar. Reinicia la consola manualmente."
+  },
+  "warning": {
+    "signature_patches": "Desactivar {} puede impedir que se abran los juegos instalados sin firma.",
+    "overlay_loader": "Desactivar {} deshabilita Ultrahand / Tesla y todos los overlays."
+  },
+  "details": {
+    "program_id": "ID de programa: {}",
+    "path": "Carpeta: {}",
+    "boot": "Se inicia al arrancar: {}",
+    "live_ok": "Se puede iniciar o detener sin reiniciar.",
+    "live_reboot": "Los cambios solo se aplican tras reiniciar.",
+    "yes": "sí",
+    "no": "no"
+  },
+  "settings": {
+    "header": "Ajustes",
+    "language": "Idioma",
+    "language_auto": "Automático",
+    "restart": "Reinicia SysToggle para aplicar el nuevo idioma.",
+    "save_failed": "No se pudieron guardar los ajustes.",
+    "about_header": "Acerca de",
+    "version": "Versión",
+    "author": "Autor",
+    "source": "Código fuente",
+    "credits": "Hecho con borealis (Apache-2.0), nanovg (zlib), Yoga (MIT), fmt (MIT), tinyxml2 (zlib) y nlohmann/json (MIT). SysToggle se publica bajo la licencia MIT.",
+    "memory_note": "La memoria del sistema es el espacio que los sysmodules comparten con Atmosphere. Cuando escasea, los juegos que cargan muchos mods de LayeredFS pueden cerrarse con el error 0xFFE (std::abort en ams_mitm). Desactivar sysmodules la libera tras reiniciar."
+  }
+}

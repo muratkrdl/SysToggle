@@ -1,0 +1,52 @@
+<brls:Box
+    width="auto"
+    height="auto">
+
+    <brls:ScrollingFrame
+        width="auto"
+        height="auto"
+        axis="column"
+        alignItems="stretch"
+        scrollingBehavior="centered"
+        grow="1.0">
+
+        <brls:Box
+            width="auto"
+            height="auto"
+            axis="column"
+            alignItems="stretch"
+            paddingTop="@style/brls/sidebar/padding_top"
+            paddingRight="@style/brls/sidebar/padding_right"
+            paddingBottom="@style/brls/sidebar/padding_bottom"
+            paddingLeft="@style/brls/sidebar/padding_left">
+
+            <brls:Header title="@i18n/app/settings/header" />
+
+            <brls:SelectorCell id="language" />
+
+            <brls:Header
+                title="@i18n/app/settings/about_header"
+                marginTop="30" />
+
+            <brls:DetailCell id="version" title="@i18n/app/settings/version" />
+            <brls:DetailCell id="author" title="@i18n/app/settings/author" />
+            <brls:DetailCell id="source" title="@i18n/app/settings/source" />
+
+            <brls:Label
+                width="auto"
+                height="auto"
+                marginTop="20"
+                text="@i18n/app/settings/memory_note" />
+
+            <brls:Label
+                width="auto"
+                height="auto"
+                marginTop="20"
+                fontSize="18"
+                text="@i18n/app/settings/credits" />
+
+        </brls:Box>
+
+    </brls:ScrollingFrame>
+
+</brls:Box>

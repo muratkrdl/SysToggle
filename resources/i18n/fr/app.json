@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "Sysmodules",
+    "profiles": "Profils",
+    "settings": "Paramètres"
+  },
+  "profiles": {
+    "header": "Profils",
+    "subtitle": "A: appliquer   X: remplacer par l'état actuel   Y: supprimer",
+    "save_new": "Enregistrer l'état actuel comme nouveau profil",
+    "empty": "Aucun profil. Configurez vos sysmodules, puis enregistrez l'état actuel comme profil.",
+    "summary": "{} activés, {} désactivés",
+    "name_header": "Nom du profil",
+    "name_hint": "Par exemple : TotK, Normal, Batterie",
+    "keyboard_failed": "Impossible d'ouvrir le clavier.",
+    "saved": "Profil \"{}\" enregistré",
+    "save_failed": "Impossible d'enregistrer les profils.",
+    "apply_question": "Appliquer le profil \"{}\" ? Les paramètres de démarrage changent maintenant et prennent effet après un redémarrage.",
+    "apply_only": "Appliquer",
+    "apply_reboot": "Appliquer et redémarrer",
+    "applied": "\"{}\" appliqué : {} modifié(s), {} non installé(s)",
+    "apply_failed": "Impossible de modifier {} module(s).",
+    "overwrite": "Remplacer",
+    "overwrite_question": "Remplacer le profil \"{}\" par les paramètres de démarrage actuels ?",
+    "delete": "Supprimer",
+    "delete_question": "Supprimer le profil \"{}\" ?"
+  },
+  "memory": {
+    "title": "Mémoire système",
+    "value": "{} Mo libres sur {} Mo",
+    "unavailable": "Indisponible"
+  },
+  "list": {
+    "header": "Sysmodules",
+    "subtitle": "A: lancer au démarrage   X: démarrer / arrêter   Y: détails",
+    "empty": "Aucun sysmodule trouvé dans atmosphere/contents.",
+    "error": "Impossible de lire sdmc:/atmosphere/contents."
+  },
+  "state": {
+    "running": "actif",
+    "stopped": "arrêté"
+  },
+  "action": {
+    "start": "Démarrer",
+    "stop": "Arrêter",
+    "details": "Détails",
+    "turn_off": "Désactiver"
+  },
+  "notify": {
+    "started": "{} démarré",
+    "stopped": "{} arrêté",
+    "live_failed": "Impossible de démarrer ou d'arrêter {}",
+    "requires_reboot": "{} ne peut pas être démarré ou arrêté pendant que la console fonctionne. Modifiez son paramètre de démarrage et redémarrez.",
+    "live_unavailable": "Le contrôle des processus n'est pas disponible sur ce système.",
+    "flag_failed": "Impossible de modifier le paramètre de démarrage de {}"
+  },
+  "reboot": {
+    "title": "Redémarrer pour appliquer les changements",
+    "detail": "Appuyez sur A",
+    "failed": "Échec du redémarrage. Redémarrez la console manuellement."
+  },
+  "warning": {
+    "signature_patches": "Désactiver {} peut empêcher le lancement des jeux installés sans signature.",
+    "overlay_loader": "Désactiver {} désactive Ultrahand / Tesla et tous les overlays."
+  },
+  "details": {
+    "program_id": "ID du programme : {}",
+    "path": "Dossier : {}",
+    "boot": "Lancé au démarrage : {}",
+    "live_ok": "Peut être démarré ou arrêté sans redémarrage.",
+    "live_reboot": "Les changements ne s'appliquent qu'après un redémarrage.",
+    "yes": "oui",
+    "no": "non"
+  },
+  "settings": {
+    "header": "Paramètres",
+    "language": "Langue",
+    "language_auto": "Automatique",
+    "restart": "Redémarrez SysToggle pour appliquer la nouvelle langue.",
+    "save_failed": "Impossible d'enregistrer les paramètres.",
+    "about_header": "À propos",
+    "version": "Version",
+    "author": "Auteur",
+    "source": "Code source",
+    "credits": "Conçu avec borealis (Apache-2.0), nanovg (zlib), Yoga (MIT), fmt (MIT), tinyxml2 (zlib) et nlohmann/json (MIT). SysToggle est distribué sous licence MIT.",
+    "memory_note": "La mémoire système est l'espace que les sysmodules partagent avec Atmosphere. Quand elle vient à manquer, les jeux qui chargent beaucoup de mods LayeredFS peuvent planter avec l'erreur 0xFFE (std::abort dans ams_mitm). Désactiver des sysmodules la libère après un redémarrage."
+  }
+}

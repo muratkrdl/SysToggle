@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "Sysmodules",
+    "profiles": "Profiles",
+    "settings": "Settings"
+  },
+  "profiles": {
+    "header": "Profiles",
+    "subtitle": "A: apply   X: overwrite with current state   Y: delete",
+    "save_new": "Save current state as a new profile",
+    "empty": "No profiles yet. Set up your sysmodules, then save the current state as a profile.",
+    "summary": "{} on, {} off",
+    "name_header": "Profile name",
+    "name_hint": "For example: TotK, Normal, Battery",
+    "keyboard_failed": "The keyboard could not be opened.",
+    "saved": "Profile \"{}\" saved",
+    "save_failed": "Profiles could not be saved.",
+    "apply_question": "Apply profile \"{}\"? Boot settings change now and take effect after a reboot.",
+    "apply_only": "Apply",
+    "apply_reboot": "Apply and reboot",
+    "applied": "\"{}\" applied: {} changed, {} not installed",
+    "apply_failed": "{} module(s) could not be changed.",
+    "overwrite": "Overwrite",
+    "overwrite_question": "Replace profile \"{}\" with the current boot settings?",
+    "delete": "Delete",
+    "delete_question": "Delete profile \"{}\"?"
+  },
+  "memory": {
+    "title": "System memory",
+    "value": "{} MB free of {} MB",
+    "unavailable": "Unavailable"
+  },
+  "list": {
+    "header": "Sysmodules",
+    "subtitle": "A: start at boot   X: start / stop now   Y: details",
+    "empty": "No sysmodules were found in atmosphere/contents.",
+    "error": "Could not read sdmc:/atmosphere/contents."
+  },
+  "state": {
+    "running": "running",
+    "stopped": "stopped"
+  },
+  "action": {
+    "start": "Start now",
+    "stop": "Stop now",
+    "details": "Details",
+    "turn_off": "Turn off"
+  },
+  "notify": {
+    "started": "{} started",
+    "stopped": "{} stopped",
+    "live_failed": "{} could not be started or stopped",
+    "requires_reboot": "{} cannot be started or stopped while the console is running. Change its boot setting and reboot.",
+    "live_unavailable": "Process control is unavailable on this system.",
+    "flag_failed": "Could not change the boot setting of {}"
+  },
+  "reboot": {
+    "title": "Reboot to apply boot changes",
+    "detail": "Press A",
+    "failed": "Reboot failed. Please reboot the console manually."
+  },
+  "warning": {
+    "signature_patches": "Turning off {} can stop games installed without signatures from launching.",
+    "overlay_loader": "Turning off {} disables Ultrahand / Tesla and every overlay."
+  },
+  "details": {
+    "program_id": "Program ID: {}",
+    "path": "Folder: {}",
+    "boot": "Starts at boot: {}",
+    "live_ok": "Can be started or stopped without a reboot.",
+    "live_reboot": "Changes only apply after a reboot.",
+    "yes": "yes",
+    "no": "no"
+  },
+  "settings": {
+    "header": "Settings",
+    "language": "Language",
+    "language_auto": "Automatic",
+    "restart": "Restart SysToggle to apply the new language.",
+    "save_failed": "Settings could not be saved.",
+    "about_header": "About",
+    "version": "Version",
+    "author": "Author",
+    "source": "Source code",
+    "credits": "Built with borealis (Apache-2.0), nanovg (zlib), Yoga (MIT), fmt (MIT), tinyxml2 (zlib) and nlohmann/json (MIT). SysToggle is released under the MIT license.",
+    "memory_note": "System memory is the pool sysmodules share with Atmosphere. When it runs low, games that load many LayeredFS mods can crash with error 0xFFE (std::abort in ams_mitm). Turning off sysmodules frees it after a reboot."
+  }
+}

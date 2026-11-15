@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "システムモジュール",
+    "profiles": "プロファイル",
+    "settings": "設定"
+  },
+  "profiles": {
+    "header": "プロファイル",
+    "subtitle": "A: 適用   X: 現在の状態で上書き   Y: 削除",
+    "save_new": "現在の状態を新しいプロファイルとして保存",
+    "empty": "プロファイルがありません。システムモジュールを設定してから、現在の状態をプロファイルとして保存してください。",
+    "summary": "{} 個オン、{} 個オフ",
+    "name_header": "プロファイル名",
+    "name_hint": "例: TotK、通常、バッテリー",
+    "keyboard_failed": "キーボードを開けませんでした。",
+    "saved": "プロファイル「{}」を保存しました",
+    "save_failed": "プロファイルを保存できませんでした。",
+    "apply_question": "プロファイル「{}」を適用しますか？起動設定は今すぐ変更され、再起動後に反映されます。",
+    "apply_only": "適用",
+    "apply_reboot": "適用して再起動",
+    "applied": "「{}」を適用: {} 個変更、{} 個未インストール",
+    "apply_failed": "{} 個のモジュールを変更できませんでした。",
+    "overwrite": "上書き",
+    "overwrite_question": "プロファイル「{}」を現在の起動設定で上書きしますか？",
+    "delete": "削除",
+    "delete_question": "プロファイル「{}」を削除しますか？"
+  },
+  "memory": {
+    "title": "システムメモリー",
+    "value": "空き {} MB / {} MB",
+    "unavailable": "取得できません"
+  },
+  "list": {
+    "header": "システムモジュール",
+    "subtitle": "A: 起動時に開始   X: 今すぐ開始 / 停止   Y: 詳細",
+    "empty": "atmosphere/contents にシステムモジュールが見つかりませんでした。",
+    "error": "sdmc:/atmosphere/contents を読み込めませんでした。"
+  },
+  "state": {
+    "running": "実行中",
+    "stopped": "停止中"
+  },
+  "action": {
+    "start": "今すぐ開始",
+    "stop": "今すぐ停止",
+    "details": "詳細",
+    "turn_off": "オフにする"
+  },
+  "notify": {
+    "started": "{} を開始しました",
+    "stopped": "{} を停止しました",
+    "live_failed": "{} を開始または停止できませんでした",
+    "requires_reboot": "{} は本体の動作中に開始・停止できません。起動設定を変更して再起動してください。",
+    "live_unavailable": "このシステムではプロセスを制御できません。",
+    "flag_failed": "{} の起動設定を変更できませんでした"
+  },
+  "reboot": {
+    "title": "再起動して起動設定を反映",
+    "detail": "Aを押す",
+    "failed": "再起動できませんでした。本体を手動で再起動してください。"
+  },
+  "warning": {
+    "signature_patches": "{} をオフにすると、署名なしでインストールしたゲームが起動できなくなることがあります。",
+    "overlay_loader": "{} をオフにすると、Ultrahand / Tesla とすべてのオーバーレイが使えなくなります。"
+  },
+  "details": {
+    "program_id": "プログラムID: {}",
+    "path": "フォルダー: {}",
+    "boot": "起動時に開始: {}",
+    "live_ok": "再起動せずに開始・停止できます。",
+    "live_reboot": "変更は再起動後に反映されます。",
+    "yes": "はい",
+    "no": "いいえ"
+  },
+  "settings": {
+    "header": "設定",
+    "language": "言語",
+    "language_auto": "自動",
+    "restart": "新しい言語はSysToggleの再起動後に反映されます。",
+    "save_failed": "設定を保存できませんでした。",
+    "about_header": "このソフトについて",
+    "version": "バージョン",
+    "author": "作者",
+    "source": "ソースコード",
+    "credits": "borealis (Apache-2.0)、nanovg (zlib)、Yoga (MIT)、fmt (MIT)、tinyxml2 (zlib)、nlohmann/json (MIT) を使用しています。SysToggleはMITライセンスで公開されています。",
+    "memory_note": "システムメモリーは、システムモジュールがAtmosphèreと共有する領域です。不足すると、LayeredFSのMODを多く読み込むゲームがエラー0xFFE（ams_mitm内のstd::abort）でクラッシュすることがあります。システムモジュールをオフにすると、再起動後にこの領域が空きます。"
+  }
+}

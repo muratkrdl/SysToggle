@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "Sysmodule",
+    "profiles": "Profile",
+    "settings": "Einstellungen"
+  },
+  "profiles": {
+    "header": "Profile",
+    "subtitle": "A: Anwenden   X: Mit aktuellem Stand überschreiben   Y: Löschen",
+    "save_new": "Aktuellen Stand als neues Profil speichern",
+    "empty": "Noch keine Profile. Sysmodule einrichten und den aktuellen Stand als Profil speichern.",
+    "summary": "{} an, {} aus",
+    "name_header": "Profilname",
+    "name_hint": "Zum Beispiel: TotK, Normal, Akku",
+    "keyboard_failed": "Die Tastatur konnte nicht geöffnet werden.",
+    "saved": "Profil \"{}\" gespeichert",
+    "save_failed": "Die Profile konnten nicht gespeichert werden.",
+    "apply_question": "Profil \"{}\" anwenden? Die Starteinstellungen werden jetzt geändert und nach einem Neustart wirksam.",
+    "apply_only": "Anwenden",
+    "apply_reboot": "Anwenden und neu starten",
+    "applied": "\"{}\" angewendet: {} geändert, {} nicht installiert",
+    "apply_failed": "{} Modul(e) konnte(n) nicht geändert werden.",
+    "overwrite": "Überschreiben",
+    "overwrite_question": "Profil \"{}\" durch die aktuellen Starteinstellungen ersetzen?",
+    "delete": "Löschen",
+    "delete_question": "Profil \"{}\" löschen?"
+  },
+  "memory": {
+    "title": "Systemspeicher",
+    "value": "{} MB von {} MB frei",
+    "unavailable": "Nicht verfügbar"
+  },
+  "list": {
+    "header": "Sysmodule",
+    "subtitle": "A: Beim Systemstart laden   X: Jetzt starten / stoppen   Y: Details",
+    "empty": "In atmosphere/contents wurden keine Sysmodule gefunden.",
+    "error": "sdmc:/atmosphere/contents konnte nicht gelesen werden."
+  },
+  "state": {
+    "running": "aktiv",
+    "stopped": "gestoppt"
+  },
+  "action": {
+    "start": "Jetzt starten",
+    "stop": "Jetzt stoppen",
+    "details": "Details",
+    "turn_off": "Deaktivieren"
+  },
+  "notify": {
+    "started": "{} gestartet",
+    "stopped": "{} gestoppt",
+    "live_failed": "{} konnte nicht gestartet oder gestoppt werden",
+    "requires_reboot": "{} kann im laufenden Betrieb nicht gestartet oder gestoppt werden. Starteinstellung ändern und neu starten.",
+    "live_unavailable": "Die Prozesssteuerung ist auf diesem System nicht verfügbar.",
+    "flag_failed": "Die Starteinstellung von {} konnte nicht geändert werden"
+  },
+  "reboot": {
+    "title": "Neu starten, um Änderungen zu übernehmen",
+    "detail": "A drücken",
+    "failed": "Neustart fehlgeschlagen. Bitte die Konsole manuell neu starten."
+  },
+  "warning": {
+    "signature_patches": "Wird {} deaktiviert, starten ohne Signatur installierte Spiele möglicherweise nicht mehr.",
+    "overlay_loader": "Das Deaktivieren von {} deaktiviert Ultrahand / Tesla und alle Overlays."
+  },
+  "details": {
+    "program_id": "Programm-ID: {}",
+    "path": "Ordner: {}",
+    "boot": "Beim Systemstart laden: {}",
+    "live_ok": "Kann ohne Neustart gestartet oder gestoppt werden.",
+    "live_reboot": "Änderungen werden erst nach einem Neustart wirksam.",
+    "yes": "ja",
+    "no": "nein"
+  },
+  "settings": {
+    "header": "Einstellungen",
+    "language": "Sprache",
+    "language_auto": "Automatisch",
+    "restart": "SysToggle neu starten, um die neue Sprache zu übernehmen.",
+    "save_failed": "Die Einstellungen konnten nicht gespeichert werden.",
+    "about_header": "Info",
+    "version": "Version",
+    "author": "Entwickler",
+    "source": "Quellcode",
+    "credits": "Erstellt mit borealis (Apache-2.0), nanovg (zlib), Yoga (MIT), fmt (MIT), tinyxml2 (zlib) und nlohmann/json (MIT). SysToggle steht unter der MIT-Lizenz.",
+    "memory_note": "Der Systemspeicher ist der Bereich, den sich Sysmodule mit Atmosphere teilen. Wird er knapp, können Spiele mit vielen LayeredFS-Mods mit dem Fehler 0xFFE (std::abort in ams_mitm) abstürzen. Das Deaktivieren von Sysmodulen gibt ihn nach einem Neustart frei."
+  }
+}

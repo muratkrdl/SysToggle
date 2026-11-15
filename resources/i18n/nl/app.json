@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "Sysmodules",
+    "profiles": "Profielen",
+    "settings": "Instellingen"
+  },
+  "profiles": {
+    "header": "Profielen",
+    "subtitle": "A: toepassen   X: overschrijven met huidige staat   Y: verwijderen",
+    "save_new": "Huidige staat opslaan als nieuw profiel",
+    "empty": "Nog geen profielen. Stel je sysmodules in en sla de huidige staat op als profiel.",
+    "summary": "{} aan, {} uit",
+    "name_header": "Profielnaam",
+    "name_hint": "Bijvoorbeeld: TotK, Normaal, Batterij",
+    "keyboard_failed": "Het toetsenbord kon niet worden geopend.",
+    "saved": "Profiel \"{}\" opgeslagen",
+    "save_failed": "De profielen konden niet worden opgeslagen.",
+    "apply_question": "Profiel \"{}\" toepassen? De opstartinstellingen worden nu gewijzigd en werken na een herstart.",
+    "apply_only": "Toepassen",
+    "apply_reboot": "Toepassen en herstarten",
+    "applied": "\"{}\" toegepast: {} gewijzigd, {} niet geïnstalleerd",
+    "apply_failed": "{} module(s) konden niet worden gewijzigd.",
+    "overwrite": "Overschrijven",
+    "overwrite_question": "Profiel \"{}\" vervangen door de huidige opstartinstellingen?",
+    "delete": "Verwijderen",
+    "delete_question": "Profiel \"{}\" verwijderen?"
+  },
+  "memory": {
+    "title": "Systeemgeheugen",
+    "value": "{} MB vrij van {} MB",
+    "unavailable": "Niet beschikbaar"
+  },
+  "list": {
+    "header": "Sysmodules",
+    "subtitle": "A: starten bij opstarten   X: nu starten / stoppen   Y: details",
+    "empty": "Geen sysmodules gevonden in atmosphere/contents.",
+    "error": "Kan sdmc:/atmosphere/contents niet lezen."
+  },
+  "state": {
+    "running": "actief",
+    "stopped": "gestopt"
+  },
+  "action": {
+    "start": "Nu starten",
+    "stop": "Nu stoppen",
+    "details": "Details",
+    "turn_off": "Uitschakelen"
+  },
+  "notify": {
+    "started": "{} gestart",
+    "stopped": "{} gestopt",
+    "live_failed": "{} kon niet worden gestart of gestopt",
+    "requires_reboot": "{} kan niet worden gestart of gestopt terwijl de console aan staat. Wijzig de opstartinstelling en herstart.",
+    "live_unavailable": "Procesbeheer is niet beschikbaar op dit systeem.",
+    "flag_failed": "Kan de opstartinstelling van {} niet wijzigen"
+  },
+  "reboot": {
+    "title": "Herstarten om wijzigingen toe te passen",
+    "detail": "Druk op A",
+    "failed": "Herstarten mislukt. Herstart de console handmatig."
+  },
+  "warning": {
+    "signature_patches": "Als je {} uitschakelt, starten games die zonder handtekening zijn geïnstalleerd mogelijk niet meer.",
+    "overlay_loader": "{} uitschakelen schakelt Ultrahand / Tesla en alle overlays uit."
+  },
+  "details": {
+    "program_id": "Programma-ID: {}",
+    "path": "Map: {}",
+    "boot": "Start bij opstarten: {}",
+    "live_ok": "Kan zonder herstart worden gestart of gestopt.",
+    "live_reboot": "Wijzigingen werken pas na een herstart.",
+    "yes": "ja",
+    "no": "nee"
+  },
+  "settings": {
+    "header": "Instellingen",
+    "language": "Taal",
+    "language_auto": "Automatisch",
+    "restart": "Herstart SysToggle om de nieuwe taal toe te passen.",
+    "save_failed": "De instellingen konden niet worden opgeslagen.",
+    "about_header": "Over",
+    "version": "Versie",
+    "author": "Auteur",
+    "source": "Broncode",
+    "credits": "Gemaakt met borealis (Apache-2.0), nanovg (zlib), Yoga (MIT), fmt (MIT), tinyxml2 (zlib) en nlohmann/json (MIT). SysToggle wordt uitgebracht onder de MIT-licentie.",
+    "memory_note": "Systeemgeheugen is de ruimte die sysmodules delen met Atmosphere. Als het opraakt, kunnen games die veel LayeredFS-mods laden crashen met fout 0xFFE (std::abort in ams_mitm). Sysmodules uitschakelen maakt het na een herstart weer vrij."
+  }
+}

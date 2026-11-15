@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "Modüller",
+    "profiles": "Profiller",
+    "settings": "Ayarlar"
+  },
+  "profiles": {
+    "header": "Profiller",
+    "subtitle": "A: uygula   X: şu anki durumla güncelle   Y: sil",
+    "save_new": "Şu anki durumu yeni profil olarak kaydet",
+    "empty": "Henüz profil yok. Modülleri istediğin gibi ayarla, sonra şu anki durumu profil olarak kaydet.",
+    "summary": "{} açık, {} kapalı",
+    "name_header": "Profil adı",
+    "name_hint": "Örneğin: TotK, Normal, Pil",
+    "keyboard_failed": "Klavye açılamadı.",
+    "saved": "\"{}\" profili kaydedildi",
+    "save_failed": "Profiller kaydedilemedi.",
+    "apply_question": "\"{}\" profili uygulansın mı? Açılış ayarları şimdi değişir, yeniden başlatınca geçerli olur.",
+    "apply_only": "Uygula",
+    "apply_reboot": "Uygula ve yeniden başlat",
+    "applied": "\"{}\" uygulandı: {} değişti, {} kurulu değil",
+    "apply_failed": "{} modül değiştirilemedi.",
+    "overwrite": "Güncelle",
+    "overwrite_question": "\"{}\" profili şu anki açılış ayarlarıyla değiştirilsin mi?",
+    "delete": "Sil",
+    "delete_question": "\"{}\" profili silinsin mi?"
+  },
+  "memory": {
+    "title": "Sistem belleği",
+    "value": "{} MB boş / toplam {} MB",
+    "unavailable": "Okunamadı"
+  },
+  "list": {
+    "header": "Modüller",
+    "subtitle": "A: açılışta başlat   X: şimdi başlat / durdur   Y: ayrıntılar",
+    "empty": "atmosphere/contents içinde hiç modül bulunamadı.",
+    "error": "sdmc:/atmosphere/contents okunamadı."
+  },
+  "state": {
+    "running": "çalışıyor",
+    "stopped": "durmuş"
+  },
+  "action": {
+    "start": "Şimdi başlat",
+    "stop": "Şimdi durdur",
+    "details": "Ayrıntılar",
+    "turn_off": "Kapat"
+  },
+  "notify": {
+    "started": "{} başlatıldı",
+    "stopped": "{} durduruldu",
+    "live_failed": "{} başlatılamadı ya da durdurulamadı",
+    "requires_reboot": "{} konsol açıkken başlatılıp durdurulamaz. Açılış ayarını değiştirip yeniden başlat.",
+    "live_unavailable": "Bu sistemde süreç kontrolü kullanılamıyor.",
+    "flag_failed": "{} için açılış ayarı değiştirilemedi"
+  },
+  "reboot": {
+    "title": "Değişiklikler için yeniden başlat",
+    "detail": "A'ya bas",
+    "failed": "Yeniden başlatılamadı. Konsolu elle yeniden başlat."
+  },
+  "warning": {
+    "signature_patches": "{} kapatılırsa imzasız kurulan oyunlar açılmayabilir.",
+    "overlay_loader": "{} kapatılırsa Ultrahand / Tesla ve bütün overlay'ler açılmaz."
+  },
+  "details": {
+    "program_id": "Program kimliği: {}",
+    "path": "Klasör: {}",
+    "boot": "Açılışta başlar: {}",
+    "live_ok": "Yeniden başlatmadan başlatılıp durdurulabilir.",
+    "live_reboot": "Değişiklikler ancak yeniden başlatınca geçerli olur.",
+    "yes": "evet",
+    "no": "hayır"
+  },
+  "settings": {
+    "header": "Ayarlar",
+    "language": "Dil",
+    "language_auto": "Otomatik",
+    "restart": "Yeni dil, SysToggle yeniden açılınca geçerli olur.",
+    "save_failed": "Ayarlar kaydedilemedi.",
+    "about_header": "Hakkında",
+    "version": "Sürüm",
+    "author": "Geliştirici",
+    "source": "Kaynak kod",
+    "credits": "borealis (Apache-2.0), nanovg (zlib), Yoga (MIT), fmt (MIT), tinyxml2 (zlib) ve nlohmann/json (MIT) ile yapıldı. SysToggle MIT lisansıyla yayımlanır.",
+    "memory_note": "Sistem belleği, modüllerin Atmosphere ile paylaştığı alandır. Azaldığında çok sayıda LayeredFS modu yükleyen oyunlar 0xFFE hatasıyla (ams_mitm içinde std::abort) çökebilir. Modülleri kapatmak, yeniden başlattıktan sonra bu alanı boşaltır."
+  }
+}

@@ -1,0 +1,23 @@
+<brls:AppletFrame
+    iconInterpolation="linear"
+    footerHidden="false">
+    <brls:TabFrame
+        title="@i18n/app/title"
+        icon="@res/img/app_icon.png">
+
+        <brls:Tab label="@i18n/app/tabs/modules">
+            <ModuleListTab />
+        </brls:Tab>
+
+        <brls:Tab label="@i18n/app/tabs/profiles">
+            <ProfilesTab />
+        </brls:Tab>
+
+        <brls:Separator />
+
+        <brls:Tab label="@i18n/app/tabs/settings">
+            <SettingsTab />
+        </brls:Tab>
+
+    </brls:TabFrame>
+</brls:AppletFrame>

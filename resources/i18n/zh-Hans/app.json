@@ -1,0 +1,89 @@
+{
+  "title": "SysToggle",
+  "tabs": {
+    "modules": "系统模块",
+    "profiles": "配置方案",
+    "settings": "设置"
+  },
+  "profiles": {
+    "header": "配置方案",
+    "subtitle": "A: 应用   X: 用当前状态覆盖   Y: 删除",
+    "save_new": "将当前状态保存为新配置方案",
+    "empty": "暂无配置方案。请先设置好系统模块，再将当前状态保存为配置方案。",
+    "summary": "{} 个开启，{} 个关闭",
+    "name_header": "配置方案名称",
+    "name_hint": "例如：TotK、普通、省电",
+    "keyboard_failed": "无法打开键盘。",
+    "saved": "已保存配置方案“{}”",
+    "save_failed": "无法保存配置方案。",
+    "apply_question": "要应用配置方案“{}”吗？启动设置将立即更改，重启后生效。",
+    "apply_only": "应用",
+    "apply_reboot": "应用并重启",
+    "applied": "已应用“{}”：{} 个已更改，{} 个未安装",
+    "apply_failed": "有 {} 个模块无法更改。",
+    "overwrite": "覆盖",
+    "overwrite_question": "要用当前启动设置覆盖配置方案“{}”吗？",
+    "delete": "删除",
+    "delete_question": "要删除配置方案“{}”吗？"
+  },
+  "memory": {
+    "title": "系统内存",
+    "value": "可用 {} MB / 共 {} MB",
+    "unavailable": "无法获取"
+  },
+  "list": {
+    "header": "系统模块",
+    "subtitle": "A: 开机启动   X: 立即启动 / 停止   Y: 详细信息",
+    "empty": "在 atmosphere/contents 中未找到系统模块。",
+    "error": "无法读取 sdmc:/atmosphere/contents。"
+  },
+  "state": {
+    "running": "运行中",
+    "stopped": "已停止"
+  },
+  "action": {
+    "start": "立即启动",
+    "stop": "立即停止",
+    "details": "详细信息",
+    "turn_off": "关闭"
+  },
+  "notify": {
+    "started": "已启动 {}",
+    "stopped": "已停止 {}",
+    "live_failed": "无法启动或停止 {}",
+    "requires_reboot": "{} 无法在主机运行时启动或停止。请更改其启动设置后重启。",
+    "live_unavailable": "此系统不支持进程控制。",
+    "flag_failed": "无法更改 {} 的启动设置"
+  },
+  "reboot": {
+    "title": "重启以应用启动设置",
+    "detail": "按A键",
+    "failed": "重启失败。请手动重启主机。"
+  },
+  "warning": {
+    "signature_patches": "关闭 {} 后，未签名安装的游戏可能无法启动。",
+    "overlay_loader": "关闭 {} 后，Ultrahand / Tesla 及所有悬浮层都将无法使用。"
+  },
+  "details": {
+    "program_id": "程序ID：{}",
+    "path": "文件夹：{}",
+    "boot": "开机启动：{}",
+    "live_ok": "无需重启即可启动或停止。",
+    "live_reboot": "更改将在重启后生效。",
+    "yes": "是",
+    "no": "否"
+  },
+  "settings": {
+    "header": "设置",
+    "language": "语言",
+    "language_auto": "自动",
+    "restart": "重新启动 SysToggle 后新语言生效。",
+    "save_failed": "无法保存设置。",
+    "about_header": "关于",
+    "version": "版本",
+    "author": "作者",
+    "source": "源代码",
+    "credits": "使用 borealis (Apache-2.0)、nanovg (zlib)、Yoga (MIT)、fmt (MIT)、tinyxml2 (zlib) 和 nlohmann/json (MIT) 构建。SysToggle 以 MIT 许可证发布。",
+    "memory_note": "系统内存是系统模块与 Atmosphère 共用的内存池。内存不足时，加载大量 LayeredFS MOD 的游戏可能会因错误 0xFFE（ams_mitm 中的 std::abort）而崩溃。关闭系统模块可在重启后释放内存。"
+  }
+}
