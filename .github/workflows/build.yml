@@ -13,7 +13,7 @@ jobs:
   tests:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
       - name: Core tests
@@ -28,16 +28,18 @@ jobs:
           apt-get update
           apt-get install -y --no-install-recommends git ca-certificates
           git config --global --add safe.directory '*'
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
       - name: Install portlibs
-        run: dkp-pacman -Sy --needed --noconfirm switch-glfw switch-mesa switch-glm
+        run: |
+          dkp-pacman -Q switch-glfw switch-mesa switch-glm \
+            || dkp-pacman -Sy --needed --noconfirm switch-glfw switch-mesa switch-glm
       - name: Build
         run: |
           cmake -B build_switch -DPLATFORM_SWITCH=ON -DCMAKE_BUILD_TYPE=Release
           cmake --build build_switch --target SysToggle.nro -j"$(nproc)"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: SysToggle
           path: build_switch/SysToggle.nro
