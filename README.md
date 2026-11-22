@@ -56,6 +56,8 @@ SysToggle is a regular homebrew app (`.nro`). It needs nothing running in the ba
 
 Settings and profiles are stored in `sd:/config/SysToggle/`.
 
+Tested on firmware 21.1.0 with Atmosphère 1.12.0 and 1.12.2. Questions and feedback: [GBAtemp thread](https://gbatemp.net/threads/systoggle-v1-0-0-turn-sysmodules-on-off-without-nx-ovlloader-fixes-0xffe-crashes-with-big-layeredfs-mods.686810/). Bug reports: [Issues](../../issues).
+
 ### Controls
 
 | Tab | Button | Action |
@@ -115,6 +117,8 @@ SysToggle normal bir homebrew uygulaması (`.nro`). Arka planda hiçbir şeyin �
 3. Homebrew menüsünden aç.
 
 Ayarlar ve profiller `sd:/config/SysToggle/` klasöründe tutulur.
+
+Firmware 21.1.0, Atmosphère 1.12.0 ve 1.12.2 ile test edildi. Soru ve geri bildirim: [GBAtemp konusu](https://gbatemp.net/threads/systoggle-v1-0-0-turn-sysmodules-on-off-without-nx-ovlloader-fixes-0xffe-crashes-with-big-layeredfs-mods.686810/). Hata bildirimi: [Issues](../../issues).
 
 ### Tuşlar
 
