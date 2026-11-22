@@ -2,3 +2,7 @@ build_switch/
 build_tests/
 build_desktop/
 docs/icon-concepts/
+__pycache__/
+tools/icon_concepts.py
+tools/make_icon.py
+tools/make_store_assets.py
